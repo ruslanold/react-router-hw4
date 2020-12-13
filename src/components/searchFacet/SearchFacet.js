@@ -12,8 +12,6 @@ class SearchFacet extends Component {
   };
 
   change = async ({ target: { name, value } }) => {
-    console.log(value, "value form");
-    console.log(name, "name form");
 
     let { data } = this.props.items;
     let filter;
@@ -39,8 +37,6 @@ class SearchFacet extends Component {
       target: { value },
     } = e;
 
-    console.log(this.props.items.data);
-
     let arr = this.props.items.data
       .reduce((acc, el, i) => {
         let filter = el.ingred
@@ -58,7 +54,6 @@ class SearchFacet extends Component {
       }, [])
       .sort((prev, next) => prev.count - next.count);
 
-    console.log(arr, "arr");
 
     this.setState((state) => {
       let min = arr[0].count;
@@ -71,7 +66,6 @@ class SearchFacet extends Component {
         min,
         max,
       };
-      console.log(obj, "obj");
 
       return {
         selectedIngredients: [...state.selectedIngredients, obj],
@@ -80,8 +74,6 @@ class SearchFacet extends Component {
   };
 
   render() {
-    console.log("render");
-    console.log(this.props);
 
     return (
       <div className="faset__search">

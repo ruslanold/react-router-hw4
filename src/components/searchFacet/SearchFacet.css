@@ -1,8 +1,6 @@
 .faset__search{
-  margin: 40px 30px 40px 10px;
-}
-
-form {
+  margin: 0px 30px;
+  max-width: 470px;
 }
 .form__item{
   margin-left: 20px;
@@ -36,7 +34,7 @@ select {
 select {
   background: #fff;
   height: 38px;
-  width: 200px;
+  width: 215px;
 }
 
 

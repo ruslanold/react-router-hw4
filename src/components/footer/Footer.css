@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+.footer__inner .menu {
+  display: flex;
+}
+.footer .menu li{
+  margin: 10px;
+}
+.footer .menu li a{
+  margin: 10px;
+  color: #fff;
+}

@@ -2,8 +2,6 @@ export default class FoodService {
 
   url = 'https://www.themealdb.com/api/json/v1/1/'
 
-  country
-
   search(query) {
     
     return fetch(`${this.url}search.php?s=${query}`)
@@ -25,5 +23,9 @@ export default class FoodService {
   
   getByCountry(country) {
     return fetch(`${this.url}filter.php?a=${country}`).then( v => v.json())
+  }
+
+  getRecipe(id) {
+    return fetch(`${this.url}lookup.php?i=${id}`).then( v => v.json())
   }
 }

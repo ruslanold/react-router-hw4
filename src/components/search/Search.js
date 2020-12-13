@@ -1,4 +1,5 @@
 import { Component } from "react";
+
 import "./Search.css";
 import FoodService from "../../services/FoodService";
 import SearchFacet from "../searchFacet/SearchFacet";
@@ -67,9 +68,10 @@ class Search extends Component {
     return (
       <div>
       <div className="search">
-        <input className="search__input" onChange={this.change} placeholder="search" />
+          <SearchFacet changeFaset={ this.changeFaset} items={ this.state.items }/>
+          <input className="search__input" onChange={this.change} placeholder="search" />
       </div>
-        <SearchFacet changeFaset={ this.changeFaset} items={ this.state.items }/>
+        
       </div>
     );
   }

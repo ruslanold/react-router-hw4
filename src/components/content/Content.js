@@ -1,7 +1,11 @@
 import { Component } from "react";
+import { NavLink } from "react-router-dom";
+
 import Search from "../search/Search";
 import { countryCodes } from "../../constants";
+import img404 from "../../404.svg";
 import "./Content.css";
+
 
 class Content extends Component {
 
@@ -31,7 +35,9 @@ class Content extends Component {
                   return (
                     <div className="content__item" key={i}>
                       <div className="content__item__inner">
-                        <h4 className="content__item-title">{el.strMeal}</h4>
+                        <h4 className="content__item-title">
+                          <NavLink to={`/recipe/${el.idMeal}`}>{el.strMeal}</NavLink>
+                        </h4>
                         <div className="content__item-text">{el.strInstructions}</div>
                         <div className="content__item__tags">
                           <img src={`https://www.countryflags.io/${this.searchCountryCode(el.strArea)}/flat/32.png`}/>
@@ -53,7 +59,7 @@ class Content extends Component {
                   );
                 })
               : <div className="content__item-not-found" >
-                Not found
+                <img src={ img404 } className="img404"/>
                 </div>
           }
         </div>

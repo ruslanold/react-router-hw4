@@ -1,0 +1,70 @@
+.recipe {
+}
+.recipe__header__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe__header__img {
+  margin: 1.67em 0;
+}
+.recipe__header__img img {
+  max-height: 540px;
+}
+.recipe__header__info {
+  padding-left: 40px;
+  max-width: 520px;
+}
+.recipe__header__info ul {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe__header__info ul li {
+  padding: 10px;
+  margin: 5px;
+}
+.recipe__header__instructions {
+
+}
+.Pasta {
+  background-color: rgb(165, 151, 24);
+}
+.Beef {
+  background-color: #a0443f;
+}
+.Breakfast {
+  background-color: #cbb18d;
+}
+.Chicken {
+  background-color: #4f1004;
+}
+.Dessert {
+  background-color: #e34e60;
+}
+.Goat {
+  background-color: #616264;
+}
+.Lamb {
+  background-color: #a49380;
+}
+.Miscellaneous {
+  background-color: #000000;
+}
+.Pork {
+  background-color: #ada7ac;
+}
+.Seafood {
+  background-color: #e6602f;
+}
+.Side {
+  background-color: #026f93;
+}
+.Starter {
+  background-color: #f0f4f6;
+}
+.Vegan {
+  background-color: #2ac404;
+}
+.Vegetarian {
+  background-color: #226411;
+}
